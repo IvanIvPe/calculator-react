@@ -1,6 +1,4 @@
-import Button from "./ui/Button/Button";
-
-type Variant = "number" | "operator" | "equals" | "function";
+import Button, { type Variant } from "./ui/Button/Button";
 
 interface Key {
   label: string;

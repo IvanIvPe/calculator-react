@@ -1,4 +1,4 @@
-type Variant = "number" | "operator" | "equals" | "function";
+export type Variant = "number" | "operator" | "equals" | "function";
 
 interface ButtonProps {
   label: string;
