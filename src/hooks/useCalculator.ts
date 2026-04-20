@@ -82,7 +82,7 @@ export function useCalculator(): UseCalculator {
 
       if (label === "%") {
         setCurrent(format(parseFloat(current) / 100));
-        setOverwrite(true);
+        setOverwrite(false);
         return;
       }
 
