@@ -38,6 +38,10 @@ export function useCalculator(): UseCalculator {
 
   const press = useCallback(
     (label: string) => {
+      if (current === "Error" && label !== "AC") {
+        return;
+      }
+
       if (/^[0-9]$/.test(label)) {
         setCurrent(overwrite || current === "0" ? label : current + label);
         setOverwrite(false);
